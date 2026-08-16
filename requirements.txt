@@ -1,0 +1,47 @@
+# ============================================================
+# Violence Detection — Merged Requirements
+# Python 3.11 / 3.12 compatible
+# Tested on Google Colab T4 and local NVIDIA GPUs
+# Note: tensorflow excluded (conflicts with mediapipe on Colab)
+# ============================================================
+
+# Deep Learning Core
+# Install the CUDA build matching your GPU if you have one:
+#   https://pytorch.org/get-started/locally/
+# CPU-only fallback (works everywhere, no GPU required):
+torch>=2.1.0
+torchvision>=0.16.0
+torchaudio>=2.1.0
+
+# Object Detection (YOLOv8 / YOLOv11)
+ultralytics>=8.3.0
+
+# Pose Estimation — pinned to avoid TensorFlow/protobuf conflicts on Colab
+mediapipe==0.10.14
+
+# Computer Vision
+opencv-python>=4.8.0
+opencv-python-headless>=4.8.0
+Pillow>=10.0.0
+
+# Numerical Computing
+numpy>=1.24.0
+scipy>=1.11.0
+
+# Data Science & Metrics
+scikit-learn>=1.3.0
+pandas>=2.0.0
+
+# Visualization
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# Experiment Tracking
+tensorboard>=2.14.0
+
+# Progress Bars
+tqdm>=4.65.0
+
+# Utilities
+PyYAML>=6.0
+requests>=2.31.0
